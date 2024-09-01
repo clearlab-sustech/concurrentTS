@@ -123,17 +123,18 @@
   </section>
 
 
-  <!-- Teaser video-->
+  <!-- Teaser image-->
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
         <video poster="" id="tree" autoplay controls muted loop height="100%">
           <!-- Your video here -->
-          <source src="static/videos/banner_video.mp4" type="video/mp4">
+          <source src="static/images/teaser.png" type="image/png">
         </video>
         <h2 class="subtitle has-text-centered">
-          Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat
-          pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
+          CTS enables legged robots of various sizes and configurations to achieve robust and agile locomotion across
+          challenging real-world terrains, while also possessing exceptional capabilities to withstand strong external
+          disturbances.
         </h2>
       </div>
     </div>
@@ -148,11 +149,23 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus.
-              Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a
-              vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac
-              gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed
-              vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+              Thanks to recent explosive developments of data-driven learning methodologies, reinforcement learning (RL)
+              emerges as a promising solution to address the legged locomotion problem in robotics. In this paper, we
+              propose CTS, a novel Concurrent Teacher-Student reinforcement learning architecture for legged locomotion
+              over uneven terrains. Different from conventional teacher-student architecture that trains the teacher
+              policy via RL first and then transfers the knowledge to the student policy through supervised learning,
+              our proposed architecture trains teacher and student policy networks concurrently under the reinforcement
+              learning paradigm. To this end, we develop a new training scheme based on a modified proximal policy
+              gradient (PPO) method that exploits data samples collected from the interactions between both the teacher
+              and the student policies with the environment.
+              The effectiveness of the proposed architecture and the new training scheme is demonstrated through
+              substantial quantitative simulation comparisons with the state-of-the-art approaches and extensive indoor
+              and outdoor experiments with quadrupedal and point-foot bipedal robot platforms, showcasing robust and
+              agile locomotion capability. %showcasing robust locomotion over challenging terrains and improved
+              performance compared to two-stage training methods.
+              Quantitative simulation comparisons show that our approach reduces the average velocity tracking error by
+              up to 20\% compared to the two-stage teacher-student, demonstrating significant superiority in addressing
+              blind locomotion tasks.
             </p>
           </div>
         </div>
