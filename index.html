@@ -63,8 +63,9 @@
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>SUSTech Clear-Lab,</span>
-              <span class="author-block"><sup>2</sup>ZJUI,</span>
+              <span class="author-block"><sup>1</sup>Southern University of Science and Technology,</span>
+              <span class="author-block"><sup>2</sup>Zhejiang University-University of Illinois Urbana-Champaign
+                Institute,</span>
               <span class="author-block"><sup>3</sup>LimX Dynamics</span>
               <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
             </div>
@@ -129,7 +130,7 @@
       <div class="hero-body">
         <video poster="" id="tree" autoplay controls muted loop height="100%">
           <!-- Your video here -->
-          <source src="static/images/teaser.png" type="image/png">
+          <source src="static/videos/full_video.mp4" type="video/mp4">
         </video>
         <h2 class="subtitle has-text-centered">
           CTS enables legged robots of various sizes and configurations to achieve robust and agile locomotion across
@@ -149,9 +150,8 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Thanks to recent explosive developments of data-driven learning methodologies, reinforcement learning (RL)
-              emerges as a promising solution to address the legged locomotion problem in robotics. In this paper, we
-              propose CTS, a novel Concurrent Teacher-Student reinforcement learning architecture for legged locomotion
+              In this paper, we propose CTS, a novel Concurrent Teacher-Student reinforcement learning architecture for
+              legged locomotion
               over uneven terrains. Different from conventional teacher-student architecture that trains the teacher
               policy via RL first and then transfers the knowledge to the student policy through supervised learning,
               our proposed architecture trains teacher and student policy networks concurrently under the reinforcement
@@ -173,6 +173,32 @@
     </div>
   </section>
   <!-- End paper abstract -->
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Pipeline -->
+      <div class="columns is-centered has-text-centered">
+        <h3 class="title is-4">Framework Pipeline</h3>
+      </div>
+      <div class="content has-text-centered">
+        <img width="75%" src="./static/images/framework.jpg">
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            The teacher and student policies are trained concurrently using PPO within an asymmetric actor-critic
+            framework. Agents in both groups share the same critic and policy network, with actions determined by
+            observations and latent representations from either privileged or proprioceptive encoder. The privileged
+            encoder is trained via policy gradient, while the proprioceptive encoder undergoes supervised learning to
+            minimize reconstruction loss.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
 
   <!-- Image carousel -->
@@ -216,29 +242,6 @@
 
 
 
-
-  <!-- Youtube video -->
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="container">
-        <!-- Paper video. -->
-        <h2 class="title is-3">Video Presentation</h2>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-
-            <div class="publication-video">
-              <!-- Youtube embed code here -->
-              <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End youtube video -->
-
-
   <!-- Video carousel -->
   <section class="hero is-small">
     <div class="hero-body">
@@ -268,25 +271,6 @@
     </div>
   </section>
   <!-- End video carousel -->
-
-
-
-
-
-
-  <!-- Paper poster -->
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title">Poster</h2>
-
-        <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
-        </iframe>
-
-      </div>
-    </div>
-  </section>
-  <!--End paper poster -->
 
 
   <!--BibTex citation -->
